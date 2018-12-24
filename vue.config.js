@@ -5,4 +5,7 @@ module.exports = {
     hot: true,
     disableHostCheck: true,
   },
+  baseUrl: process.env.NODE_ENV === 'production'
+    ? '/parkGenerator/'
+    : '/'
 };
