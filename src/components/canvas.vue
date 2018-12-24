@@ -92,8 +92,8 @@ export default {
   async mounted() {
     const backgroundImage = new Image();
     const frameImage = new Image();
-    backgroundImage.src = "/static/background.png";
-    frameImage.src = "/static/frame.png";
+    backgroundImage.src = "./static/background.png";
+    frameImage.src = "./static/frame.png";
     await Promise.all([
       new Promise((resolve, reject) => {
         backgroundImage.addEventListener(
